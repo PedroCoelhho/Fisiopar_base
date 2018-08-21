@@ -1,0 +1,3 @@
+<?php foreach ($consulta as $resultado): ?>
+                <?php echo "<option value=" . $resultado['nomedesc'] . ">" .$resultado['nomedesc'] .'</option>'?>
+                <?php endforeach; ?>

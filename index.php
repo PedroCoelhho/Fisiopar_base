@@ -47,7 +47,7 @@ if (!ValidadorUrl::validar($page)) {
                             <li>
                                 <a href="Home">
                                 <i class="fa fa-dashboard fa-fw"></i>
-                                <span class="titulo">Inicio</span>
+                                <span class="titulo">Home</span>
                                 </a>
                             </li>
 
@@ -65,54 +65,34 @@ if (!ValidadorUrl::validar($page)) {
                             </li>
 
                             <li class="">
-                                <a href="#menu_medico" data-toggle="collapse">
+                                <a href="#menu_atendimento" data-toggle="collapse">
+                                <i class="fa fa-users fa-fw"></i>
+                                <span class="titulo">Atendimento</span>
+                                <span class="arrow"></span>
+                                </a>
+
+                                <ul id="menu_atendimento" class="sidebar-sub-menu collapse">
+                                <li><a href="AgendamentoConsulta">Criar atendimento<i class="fa fa-plus"></i></a></li>
+                                <li><a href="BuscarAtendimento">Buscar Atendimento<i class="fa fa-list"></i></a></li>
+                                <li><a href="#">verificar agenda<i class="fa fa-plus"></i></a></li>
+                                <li><a href="Prontuario">Anamnese</a></li>
+                                </ul>
+                            </li>
+
+                             <li class="">
+                                <a href="#menu_funcionario" data-toggle="collapse">
                                 <i class="fa fa-user-md fa-fw"></i>
-                                <span class="titulo">Fisioterapeuta</span>
+                                <span class="titulo">Funcionarios</span>
                                 <span class="arrow fa-fw"></span>
                                 </a>
 
-                                <ul id="menu_medico" class="sidebar-sub-menu collapse">
-                                <li><a href="CadastroMedico">Novo<i class="fa fa-plus"></i></a></li>
+                                <ul id="menu_funcionario" class="sidebar-sub-menu collapse">
+                                <li><a href="CadastroMedico">Cad Fisio<i class="fa fa-plus"></i></a></li>                               
+                                <li><a href="CadastroAluno">Cad Aluno<i class="fa fa-plus"></i></a></li>
+                                <li><a href="#">Cad Secretaria<i class="fa fa-plus"></i></a></li>    
                                 <li><a href="#">Listar<i class="fa fa-list"></i></a></li>
                                 </ul>
-                            </li>
-
-                            <li class="">
-                                <a href="#menu_aluno" data-toggle="collapse">
-                                <i class="fa fa-user fa-fw"></i>
-                                <span class="titulo">Estagiário</span>
-                                <span class="arrow"></span>
-                                </a>
-
-                                <ul id="menu_aluno" class="sidebar-sub-menu collapse">
-                                <li><a href="CadastroAluno">Novo<i class="fa fa-plus"></i></a></li>
-                                <li><a href="#">Listar<i class="fa fa-list"></i></a></li>
-                                </ul>
-                            </li>                          
-
-                            <li>
-                                <a href="#menu_agenda" data-toggle="collapse">
-                                <i class="fa fa-calendar fa-fw"></i>
-                                <span class="titulo">Agenda</span>
-                                <span class="arrow"></span>
-                                </a>
-
-                                <ul id="menu_agenda" class="sidebar-sub-menu collapse">
-                                <li><a href="AgendamentoConsulta">Novo<i class="fa fa-plus"></i></a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#menu_servico" data-toggle="collapse">
-                                <i class="fa fa-tasks fa-fw"></i>
-                                <span class="titulo">Anamnese</span>
-                                <span class="arrow"></span>
-                                </a>
-
-                                <ul id="menu_servico" class="sidebar-sub-menu collapse">
-                                <li><a href="Prontuario">Novo</a></li>
-                                </ul>
-                            </li>
+                            </li>         
 
                             <li>
                                 <a href="#menu_cid10" data-toggle="collapse">
